@@ -29,14 +29,14 @@ def semantic_analysis(tokens):
 
         return f"{var} declared successfully"
 
-    # Print
+  
     elif tokens[0] == "print":
         var = tokens[2]
         if var in symbol_table:
             return f"Value of {var} = {symbol_table[var]}"
         return "Variable not found"
 
-    # Assignment
+    
     else:
         var = tokens[0]
 
