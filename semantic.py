@@ -14,7 +14,7 @@ def evaluate_expression(tokens):
 def semantic_analysis(tokens):
     global symbol_table
 
-    # Declaration
+  
     if tokens[0] == "int":
         var = tokens[1]
 
